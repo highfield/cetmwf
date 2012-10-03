@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WorkflowRoot>
+  <Declarations />
+  <Child>
+    <While>
+      <Condition>
+        <Explicit>
+          <Value>true</Value>
+          <Type>Boolean</Type>
+        </Explicit>
+      </Condition>
+      <Body>
+        <Sequence>
+          <Declarations>
+            <DefField>
+              <Type>Boolean</Type>
+              <Name>temp</Name>
+            </DefField>
+          </Declarations>
+          <Items>
+            <Assign>
+              <TargetField>
+                <Explicit>
+                  <Value>temp</Value>
+                  <Type>Boolean</Type>
+                  <IsLiteral>true</IsLiteral>
+                </Explicit>
+              </TargetField>
+              <SourceValue>
+                <ReadInputPort>
+                  <Arg>
+                    <Explicit>
+                      <Value>2</Value>
+                      <Type>Int32</Type>
+                    </Explicit>
+                  </Arg>
+                </ReadInputPort>
+              </SourceValue>
+            </Assign>
+            <WriteOnboardLed>
+              <Arg>
+                <Explicit>
+                  <Value>temp</Value>
+                  <Type>Boolean</Type>
+                  <IsLiteral>true</IsLiteral>
+                </Explicit>
+              </Arg>
+            </WriteOnboardLed>
+          </Items>
+        </Sequence>
+      </Body>
+    </While>
+  </Child>
+</WorkflowRoot>

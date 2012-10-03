@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cet.Develop.NETMF.MicroWorkflow.Test.StdSocket", "Cet.Develop.NETMF.MicroWorkflow.Test.StdSocket\Cet.Develop.NETMF.MicroWorkflow.Test.StdSocket.csproj", "{B1FC133D-1E05-4DCE-9588-140B8C3765DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cet.Develop.NETMF.MicroWorkflow.Engine", "..\Cet.Develop.NETMF.MicroWorkflow.Engine\Cet.Develop.NETMF.MicroWorkflow.Engine.csproj", "{29800F6D-DD97-4E3C-BF4C-6CF2FCAF32AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cet.Develop.NETMF.MicroWorkflow.Library", "..\Cet.Develop.NETMF.MicroWorkflow.Library\Cet.Develop.NETMF.MicroWorkflow.Library.csproj", "{2868FFFB-01C1-4802-B613-C7FAC8C149A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1FC133D-1E05-4DCE-9588-140B8C3765DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1FC133D-1E05-4DCE-9588-140B8C3765DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1FC133D-1E05-4DCE-9588-140B8C3765DB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B1FC133D-1E05-4DCE-9588-140B8C3765DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1FC133D-1E05-4DCE-9588-140B8C3765DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1FC133D-1E05-4DCE-9588-140B8C3765DB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{29800F6D-DD97-4E3C-BF4C-6CF2FCAF32AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29800F6D-DD97-4E3C-BF4C-6CF2FCAF32AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29800F6D-DD97-4E3C-BF4C-6CF2FCAF32AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29800F6D-DD97-4E3C-BF4C-6CF2FCAF32AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2868FFFB-01C1-4802-B613-C7FAC8C149A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2868FFFB-01C1-4802-B613-C7FAC8C149A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2868FFFB-01C1-4802-B613-C7FAC8C149A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2868FFFB-01C1-4802-B613-C7FAC8C149A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

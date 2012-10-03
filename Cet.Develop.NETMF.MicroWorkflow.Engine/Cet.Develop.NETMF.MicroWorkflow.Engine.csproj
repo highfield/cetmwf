@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AssemblyName>Cet.Develop.NETMF.MicroWorkflow</AssemblyName>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Cet.Develop.NETMF.MicroWorkflow</RootNamespace>
+    <ProjectTypeGuids>{b69e3092-b931-443c-abe7-7e7b65f2a37f};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{29800F6D-DD97-4E3C-BF4C-6CF2FCAF32AE}</ProjectGuid>
+    <TargetFrameworkVersion>v4.1</TargetFrameworkVersion>
+    <NetMfTargetsBaseDir Condition="'$(NetMfTargetsBaseDir)'==''">$(MSBuildExtensionsPath32)\Microsoft\.NET Micro Framework\</NetMfTargetsBaseDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets" />
+  <ItemGroup>
+    <Compile Include="Misc\CodeReader.cs" />
+    <Compile Include="Misc\EngineStack.cs" />
+    <Compile Include="Misc\WorkflowCommonDefs.cs" />
+    <Compile Include="Models\Context\EngineContextAssign.cs" />
+    <Compile Include="Models\Context\EngineContextCast.cs" />
+    <Compile Include="Models\Context\EngineContextConstantValue.cs" />
+    <Compile Include="Models\Context\EngineContextFunc0.cs" />
+    <Compile Include="Models\Context\EngineContextFunc1.cs" />
+    <Compile Include="Models\Context\EngineContextFunc2.cs" />
+    <Compile Include="Models\Context\EngineContextFunc3.cs" />
+    <Compile Include="Models\Context\EngineContextFunc4.cs" />
+    <Compile Include="Models\Context\EngineContextFuncBase.cs" />
+    <Compile Include="Models\Context\EngineContextGlobalVarReference.cs" />
+    <Compile Include="Models\Context\EngineContextIf.cs" />
+    <Compile Include="Models\Context\EngineContextLocalVarReference.cs" />
+    <Compile Include="Models\Context\EngineContextNodeBase.cs" />
+    <Compile Include="Models\Context\EngineContextNop.cs" />
+    <Compile Include="Models\Context\EngineContextRoot.cs" />
+    <Compile Include="Models\Context\EngineContextSequence.cs" />
+    <Compile Include="Models\Context\EngineContextWhile.cs" />
+    <Compile Include="Models\EngineContextFactory.cs" />
+    <Compile Include="Models\EngineSession.cs" />
+    <Compile Include="Models\IContextSerializer.cs" />
+    <Compile Include="Models\Variables\EngineVariableSurrogate.cs" />
+    <Compile Include="Models\Variables\EngineVariableTemplate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SPOT.Native">
+    </Reference>
+  </ItemGroup>
+</Project>
